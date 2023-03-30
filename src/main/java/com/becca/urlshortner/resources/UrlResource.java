@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UrlResource {
     @GetMapping("/ping")
     public String ping() {
-        return "ping";
+        return "pong";
     }
 
     @PostMapping
@@ -18,5 +18,4 @@ public class UrlResource {
         System.out.println(url);
         return ResponseEntity.ok().build();
     }
-
 }
